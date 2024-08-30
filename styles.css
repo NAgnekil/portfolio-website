@@ -19,6 +19,10 @@ body {
   font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.logo {
+  width: 200px;
+}
+
 header {
   nav {
     border-bottom: 2px solid var(--color-black-olive);
@@ -68,31 +72,41 @@ header {
   }
 }
 
-.logo {
-  width: 200px;
-}
-
 footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 1.2rem;
   background-color: blanchedalmond;
+  gap: 1.5rem;
   .logo-and-contact {
     display: flex;
     flex-direction: column;
     align-items: center;
+    .logo {
+      margin-bottom: 0.7rem;
+    }
+    p {
+      margin: 0;
+      font-size: 14px;
+    }
   }
   .links {
     display: flex;
     flex-direction: column;
     align-items: center;
+    a {
+      color: var(--color-black-olive);
+      font-weight: 600;
+    }
   }
   .socials {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    color: #fff;
+    margin: 1rem 0;
+    gap: 0.8rem;
   }
 }
 
@@ -117,7 +131,6 @@ footer {
     flex-direction: row;
     justify-content: space-around;
     .logo-and-contact {
-      width: 33%;
       display: flex;
       flex-direction: column;
       .logo {
@@ -125,6 +138,7 @@ footer {
       }
     }
     .logo-and-contact {
+      width: 33%;
       align-items: flex-start;
     }
     .links {
@@ -132,7 +146,7 @@ footer {
       align-items: unset;
     }
     .socials {
-      width: 33%;
+      justify-content: unset;
     }
   }
 }
