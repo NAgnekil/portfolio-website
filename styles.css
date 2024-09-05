@@ -19,9 +19,6 @@ body {
   font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  overflow: hidden;
-  height: 100vh;
 }
 
 .logo {
@@ -29,6 +26,9 @@ body {
 }
 
 header {
+  position: sticky;
+  top: 0;
+  background: #fff;
   nav {
     border-bottom: 2px solid var(--color-black-olive);
     ul {
@@ -77,13 +77,28 @@ header {
   }
 }
 
+main {
+  background-image: url(assets/background-blue-pour-halfx650.png);
+  background-color: rgba(255, 255, 255, 0.7);
+  background-blend-mode: lighten;
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  section {
+    margin: 32px;
+  }
+}
+
 footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 1.2rem;
-  background-color: blanchedalmond;
+  margin-top: auto;
+  background-color: var(--color-light-cyan);
   gap: 1.5rem;
   .logo-and-contact {
     display: flex;
@@ -117,6 +132,10 @@ footer {
 
 /* media query for computer screens */
 @media screen and (min-width: 768px) {
+  body {
+    overflow: hidden;
+    height: 100vh;
+  }
   header {
     nav {
       .nav-toggle {
@@ -129,6 +148,13 @@ footer {
           display: block;
         }
       }
+    }
+  }
+
+  main {
+    background-color: rgba(255, 255, 255, 0.3);
+    section {
+      width: 60%;
     }
   }
 
