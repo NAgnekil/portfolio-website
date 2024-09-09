@@ -18,7 +18,7 @@
           <i class="fa-solid fa-bars fa-xl menu"></i>
           <i class="fa-solid fa-xmark fa-2xl close"></i>
         </label>
-        <ul class="nav-menu">
+        <ul class="nav-menu flex-column">
           <img src="assets/LOGO.png" alt="logotyp" class="logo" />
           <li><a href="index.html">Hem</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
@@ -27,8 +27,8 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <section>
+    <main class="flex-column">
+      <section class="welcome-text">
         <h1>Välkommen till min kreativa värld!</h1>
         <p>
           Hej och välkommen till min portfolio. Jag är en passionerad
@@ -48,28 +48,61 @@
           Tveka inte att ta kontakt om du vill diskutera ett projekt eller bara
           säga hej!
         </p>
+        <button>Ta kontakt!</button>
+      </section>
+      <section class="portfolio-container flex-column">
+        <div class="portfolio-teaser flex-column">
+          <div class="portfolio-item flex-column">
+            <h2>Portfolio-hemsida</h2>
+            <img
+              src="assets/rm245-bb-06-f.png"
+              alt="Teaser image of portfolio website"
+            />
+            <p class="project-desc">
+              Målet med projektet var att skapa en hemsida där jag kunde visa
+              upp mina projekt för potentiella arbetsgivare. Jag ville ha en
+              avskalad men artistisk design gjord från grunden med endast HTML
+              och CSS, utan att använda JavaScript eller ramverk.
+            </p>
+            <button>Läs mer</button>
+          </div>
+          <div class="portfolio-item">
+            <h2>Portfolio-hemsida</h2>
+            <img
+              src="assets/v752-ning-19.jpg"
+              alt="Teaser image of portfolio website"
+            />
+            <p class="project-desc">
+              Målet med projektet var att skapa en hemsida där jag kunde visa
+              upp mina projekt för potentiella arbetsgivare. Jag ville ha en
+              avskalad men artistisk design gjord från grunden med endast HTML
+              och CSS, utan att använda JavaScript eller ramverk.
+            </p>
+            <button>Läs mer</button>
+          </div>
+        </div>
+        <div class="more-projects-link">
+          <a href="portfolio.html"><p>Fler projekt</p></a>
+        </div>
       </section>
     </main>
-    <footer>
-      <!-- <hr /> -->
-      <div class="footer-container">
-        <section class="logo-and-contact">
-          <img src="assets/LOGO.png" alt="logotyp" class="logo" />
+    <footer class="footer-container flex-column">
+      <section class="logo-and-contact flex-column">
+        <img src="assets/LOGO.png" alt="logotyp" class="logo" />
 
-          <p>E-mail: hej@hejhej.com</p>
-          <p>Tel: 070-632 23 56</p>
-        </section>
-        <section class="links">
-          <a href="index.html">Hem</a>
-          <a href="portfolio.html">Portfolio</a>
-          <a href="about.html">Om mig</a>
-          <a href="contact.html">Kontakt</a>
-        </section>
-        <section class="socials">
-          <i class="fa-brands fa-linkedin fa-2xl"></i>
-          <i class="fa-brands fa-github fa-2xl"></i>
-        </section>
-      </div>
+        <p>E-mail: hej@hejhej.com</p>
+        <p>Tel: 070-632 23 56</p>
+      </section>
+      <section class="links flex-column">
+        <a href="index.html">Hem</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="about.html">Om mig</a>
+        <a href="contact.html">Kontakt</a>
+      </section>
+      <section class="socials">
+        <i class="fa-brands fa-linkedin fa-2xl"></i>
+        <i class="fa-brands fa-github fa-2xl"></i>
+      </section>
     </footer>
 
     <!-- <a href="https://www.freepik.com/free-vector/watercolor-background-design_12143335.htm#query=minimalist%20watercolor%20background&position=0&from_view=keyword&track=ais_hybrid&uuid=5d1482db-23ea-4fad-9fc8-2ed5bf2a47dc">Image by freepik</a> -->
