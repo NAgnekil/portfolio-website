@@ -28,32 +28,39 @@
       </nav>
     </header>
     <main class="flex-column">
-      <section class="welcome-text">
-        <h1>Välkommen till min kreativa värld!</h1>
-        <p>
-          Hej och välkommen till min portfolio. Jag är en passionerad
-          frontendutvecklare och UX/UI-designer med en stark tro på att design
-          inte bara handlar om att skapa något vackert, utan också om att lösa
-          problem och förbättra användarupplevelser. Här hittar du en samling av
-          mina senaste projekt där estetik möter funktionalitet.
-        </p>
-        <p>
-          Utforska mina arbeten och se hur jag kombinerar designprinciper med
-          tekniska lösningar för att skapa engagerande och användarvänliga
-          gränssnitt. Oavsett om det handlar om att bygga intuitiva
-          webbapplikationer eller skapa användarcentrerade designlösningar,
-          strävar jag alltid efter att leverera högsta kvalitet och värde.
-        </p>
-        <p>
-          Tveka inte att ta kontakt om du vill diskutera ett projekt eller bara
-          säga hej!
-        </p>
-        <button>Ta kontakt!</button>
-      </section>
+      <div class="start-container flex-column">
+        <section class="welcome-text">
+          <h1>Välkommen till min kreativa värld!</h1>
+          <p>
+            Jag är en frontendutvecklare med fokus på att skapa effektiva och
+            användarvänliga gränssnitt.
+          </p>
+          <p>
+            Här kan du utforska mina senaste projekt där jag kombinerar teknik
+            med kreativitet för att bygga intuitiva och funktionella
+            webbapplikationer.
+          </p>
+          <p>
+            Titta på mina arbeten och kontakta mig gärna om du vill diskutera
+            ett projekt eller bara säga hej!
+          </p>
+          <a href="about.html" class="cta-button">Ta kontakt!</a>
+        </section>
+        <aside>
+          <blockquote>
+            <p class="quote">
+              Design är inte bara hur det ser ut och känns. Design är hur det
+              fungerar.
+            </p>
+            <p class="quote-author">— Steve Jobs</p>
+          </blockquote>
+        </aside>
+      </div>
+
       <section class="portfolio-container flex-column">
         <div class="portfolio-teaser flex-column">
-          <div class="portfolio-item flex-column">
-            <h2>Portfolio-hemsida</h2>
+          <div class="portfolio-item">
+            <h2>Portfolio</h2>
             <img
               src="assets/rm245-bb-06-f.png"
               alt="Teaser image of portfolio website"
@@ -64,10 +71,10 @@
               avskalad men artistisk design gjord från grunden med endast HTML
               och CSS, utan att använda JavaScript eller ramverk.
             </p>
-            <button>Läs mer</button>
+            <a href="about.html" class="cta-button">Läs mer</a>
           </div>
           <div class="portfolio-item">
-            <h2>Portfolio-hemsida</h2>
+            <h2>En annan hemsida</h2>
             <img
               src="assets/v752-ning-19.jpg"
               alt="Teaser image of portfolio website"
@@ -78,14 +85,17 @@
               avskalad men artistisk design gjord från grunden med endast HTML
               och CSS, utan att använda JavaScript eller ramverk.
             </p>
-            <button>Läs mer</button>
+            <a href="about.html" class="cta-button">Läs mer</a>
           </div>
         </div>
-        <div class="more-projects-link">
-          <a href="portfolio.html"><p>Fler projekt</p></a>
+        <div class="more-projects-link cta-button">
+          <a href="portfolio.html">Fler projekt</a>
         </div>
       </section>
     </main>
+    <div class="modal">
+      <article></article>
+    </div>
     <footer class="footer-container flex-column">
       <section class="logo-and-contact flex-column">
         <img src="assets/LOGO.png" alt="logotyp" class="logo" />
