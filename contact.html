@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="stylescontact.css" />
+    <script
+      src="https://kit.fontawesome.com/5a52363ea2.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Nathalies portfolio</title>
+    <meta
+      name="description"
+      content="Upptäck kreativa och tekniska lösningar inom frontendutveckling och UI-design. Utforska min portfolio där jag kombinerar estetik och funktionalitet för att skapa användarvänliga, moderna webblösningar"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <input type="checkbox" id="nav-checkbox" class="nav-checkbox" />
+        <label for="nav-checkbox" class="nav-toggle">
+          <i class="fa-solid fa-bars fa-xl menu"></i>
+          <i class="fa-solid fa-xmark fa-2xl close"></i>
+        </label>
+        <ul class="nav-menu flex-column">
+          <img src="assets/LOGO.png" alt="logotyp" class="logo" />
+          <li><a href="index.html">Hem</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="about.html">Om mig</a></li>
+          <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="flex-column">
+      <div class="contact-container">
+        <section class="form-container">
+          <form class="contact-form" action="#" method="post">
+            <h2>Ta kontakt!</h2>
+            <div class="form-group">
+              <label for="firstname">Förnamn</label>
+              <input type="text" id="firstname" name="firstname" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Telefonnummer</label>
+              <input type="tel" id="phone" name="phone" required />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Meddelande</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="cta-button">Skicka</button>
+          </form>
+        </section>
+        <aside>
+          <blockquote>
+            <p class="quote">
+              Ensam kan vi göra så lite; tillsammans kan vi göra så mycket.
+            </p>
+            <p class="quote-author">— Helen Keller</p>
+          </blockquote>
+        </aside>
+      </div>
+    </main>
+    <footer class="footer-container flex-column">
+      <section class="logo-and-contact flex-column">
+        <img src="assets/LOGO.png" alt="logotyp" class="logo" />
+
+        <p>E-mail: hej@hejhej.com</p>
+        <p>Tel: 070-632 23 56</p>
+      </section>
+      <section class="links flex-column">
+        <a href="index.html">Hem</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="about.html">Om mig</a>
+        <a href="contact.html">Kontakt</a>
+      </section>
+      <section class="socials">
+        <i class="fa-brands fa-linkedin fa-2xl"></i>
+        <i class="fa-brands fa-github fa-2xl"></i>
+      </section>
+    </footer>
+  </body>
+</html>
