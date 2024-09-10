@@ -9,6 +9,10 @@
       crossorigin="anonymous"
     ></script>
     <title>Nathalies portfolio</title>
+    <meta
+      name="description"
+      content="Upptäck kreativa och tekniska lösningar inom frontendutveckling och UI-design. Utforska min portfolio där jag kombinerar estetik och funktionalitet för att skapa användarvänliga, moderna webblösningar"
+    />
   </head>
   <body>
     <header>
@@ -57,7 +61,7 @@
         </aside>
       </div>
 
-      <section class="portfolio-container flex-column">
+      <section class="portfolio-container flex-column" id="portfolio-section">
         <div class="portfolio-teaser flex-column">
           <div class="portfolio-item">
             <h2>Portfolio</h2>
@@ -71,7 +75,7 @@
               avskalad men artistisk design gjord från grunden med endast HTML
               och CSS, utan att använda JavaScript eller ramverk.
             </p>
-            <a href="about.html" class="cta-button">Läs mer</a>
+            <a href="#modal1" class="cta-button">Läs mer</a>
           </div>
           <div class="portfolio-item">
             <h2>En annan hemsida</h2>
@@ -88,13 +92,88 @@
             <a href="about.html" class="cta-button">Läs mer</a>
           </div>
         </div>
-        <div class="more-projects-link cta-button">
-          <a href="portfolio.html">Fler projekt</a>
-        </div>
+        <a href="portfolio.html" class="more-projects-link cta-button"
+          >Fler projekt</a
+        >
       </section>
     </main>
-    <div class="modal">
-      <article></article>
+    <div class="modal1" id="modal1">
+      <article>
+        <div class="article-head">
+          <h2 class="project-header">Portfolio - eget projekt</h2>
+          <a href="#portfolio-section" class="close-modal">
+            <i class="fa-solid fa-xmark fa-2xl"></i>
+          </a>
+        </div>
+        <div class="article-container">
+          <div class="article-images">
+            <img
+              src="assets/v752-ning-19.jpg"
+              alt="Teaser image of portfolio website"
+            />
+            <img
+              src="assets/v752-ning-19.jpg"
+              alt="Teaser image of portfolio website"
+            />
+            <img
+              src="assets/v752-ning-19.jpg"
+              alt="Teaser image of portfolio website"
+            />
+          </div>
+          <div class="article-desc">
+            <p class="project-goal">
+              <b>Goal for the project:</b> The client, a local clothing brand,
+              wanted a complete redesign of their existing e-commerce website.
+              Their primary request was to create a more modern, user-friendly
+              experience that would not only reflect their brand’s aesthetic but
+              also increase online sales by improving the customer journey. They
+              wanted to streamline the shopping process, making it easier to
+              browse products, add items to the cart, and complete purchases.
+              The main challenge was to create a responsive, visually appealing
+              design that could cater to both desktop and mobile users while
+              maintaining the brand's identity. Success would be measured by a
+              boost in user engagement, increased conversion rates, and positive
+              feedback from customers.
+            </p>
+            <p class="project-experience">
+              <b>My experience:</b> From the beginning, I knew this project
+              would be both a design and technical challenge, especially when it
+              came to optimizing the site for mobile users. After initial
+              discussions with the client, I realized that one of the core
+              issues with the old site was cluttered navigation and unclear
+              call-to-actions (CTAs). I decided to focus on creating a
+              minimalistic design with a clear structure, prioritizing product
+              visibility and user flow.
+              <br />
+              To start, I sketched out wireframes to map out key areas such as
+              product categories, featured items, and a revamped checkout
+              process. I opted for a clean, grid-based layout to maintain visual
+              order while highlighting the products with high-quality images.
+              The use of bold CTAs and sticky navigation helped guide the user
+              smoothly through the shopping experience.
+              <br />
+              One insight I gained during testing was the importance of
+              mobile-first design. Through user testing, I discovered that
+              mobile users often experienced friction when trying to navigate
+              the site, so I simplified the mobile interface even further,
+              focusing on large buttons and easy scrolling.
+            </p>
+            <p class="project-outcome">
+              <b>The outcome:</b> The final result exceeded both my and the
+              client’s expectations. The new site not only looked more cohesive
+              and professional but also significantly improved usability. After
+              launch, the brand saw a 30% increase in conversion rates within
+              the first month, with mobile sales growing by 40%. The client was
+              thrilled with the outcome, especially the positive feedback they
+              received from customers about how easy it was to find and purchase
+              products. This project taught me the importance of blending strong
+              visual design with seamless functionality, and I’m incredibly
+              proud of the final product.
+            </p>
+            <p class="project-techniques"><b>Använda tekniker:</b> HTML, CSS</p>
+          </div>
+        </div>
+      </article>
     </div>
     <footer class="footer-container flex-column">
       <section class="logo-and-contact flex-column">
@@ -114,7 +193,5 @@
         <i class="fa-brands fa-github fa-2xl"></i>
       </section>
     </footer>
-
-    <!-- <a href="https://www.freepik.com/free-vector/watercolor-background-design_12143335.htm#query=minimalist%20watercolor%20background&position=0&from_view=keyword&track=ais_hybrid&uuid=5d1482db-23ea-4fad-9fc8-2ed5bf2a47dc">Image by freepik</a> -->
   </body>
 </html>
