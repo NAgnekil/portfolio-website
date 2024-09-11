@@ -291,12 +291,15 @@ footer {
       color: var(--color-black-olive);
       font-weight: 600;
     }
-    .socials {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      margin: 1rem 0;
-      gap: 0.8rem;
+  }
+  .socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 1rem 0;
+    gap: 0.8rem;
+    a {
+      color: unset;
     }
   }
 }
