@@ -30,7 +30,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0;
-  background-image: url(assets/pexels-ofspace-16323586.jpg);
+  background-image: url(assets/pexels-diva-27294878.jpg);
   /* background-color: rgba(255, 255, 255, 0.7);
   background-blend-mode: lighten; */
   background-repeat: no-repeat;
@@ -115,6 +115,9 @@ main {
     &.portfolio-container {
       .portfolio-teaser {
         gap: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         .portfolio-item {
           font-size: 0.9rem;
           max-width: 90%;
@@ -205,7 +208,9 @@ main {
 .modal1,
 .modal2,
 .modal3,
-.modal4 {
+.modal4,
+.modal5,
+.modal6 {
   display: none;
   justify-content: center;
   align-items: center;
@@ -300,7 +305,15 @@ footer {
   }
 }
 
-/* media query for computer screens */
+/* Variabler för återanvändning */
+:root {
+  --logo-width-large: 200px;
+  --logo-width-small: 150px;
+  --max-width-large: 75%;
+  --max-width-medium: 95%;
+}
+
+/* Gemensamma stilar för båda media queries */
 @media screen and (min-width: 768px) {
   body {
     justify-content: space-between;
@@ -309,7 +322,7 @@ footer {
   }
 
   .logo {
-    width: 200px;
+    width: var(--logo-width-large);
   }
 
   header {
@@ -320,11 +333,16 @@ footer {
         display: none;
       }
       .nav-menu {
+        max-width: 90%;
         flex-direction: row;
         padding: 0;
-        margin: 1rem;
+        margin: 1rem auto;
         .nav-link {
           display: block;
+        }
+        :first-child {
+          margin-top: 3px;
+          margin-right: auto;
         }
       }
     }
@@ -339,28 +357,29 @@ footer {
     .start-container,
     .portfolio-container {
       margin: 0 auto;
-      max-width: 90%;
       .welcome-text {
         margin: 0;
-        /* background: rgba(255, 255, 255, 0.7); */
       }
     }
+    .about-me {
+      max-width: var(--max-width-large);
+    }
     section {
-      /* max-width: 75%; */
       margin: 0;
-      .portfolio-teaser {
-        flex-direction: row;
-        max-width: 90%;
-        /* gap: 1rem; */
-        .portfolio-item {
-          margin: 0;
-          background: rgba(255, 255, 255, 0.7);
+      &.portfolio-container {
+        .portfolio-teaser {
+          flex-direction: row;
+          align-items: flex-start;
+          max-width: 90%;
+          .portfolio-item {
+            margin: 0;
+            background: rgba(255, 255, 255, 0.7);
+          }
         }
       }
     }
     aside {
       margin: 0;
-      /* max-width: 30%; */
       blockquote {
         position: relative;
         line-height: 1.6;
@@ -373,7 +392,6 @@ footer {
           text-align: right;
         }
       }
-
       blockquote::after {
         content: '\201C';
         font-family: 'Alex Brush', regular;
@@ -394,7 +412,7 @@ footer {
       display: flex;
       flex-direction: column;
       .logo {
-        width: 150px;
+        width: var(--logo-width-small);
       }
     }
     .logo-and-contact {
@@ -408,5 +426,21 @@ footer {
     .socials {
       justify-content: unset;
     }
+  }
+}
+
+/* Specifika stilar för större skärmar */
+@media screen and (min-width: 1200px) {
+  .start-container,
+  .portfolio-container {
+    max-width: var(--max-width-large);
+  }
+}
+
+/* Specifika stilar för mindre skärmar */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .start-container,
+  .portfolio-container {
+    max-width: var(--max-width-medium);
   }
 }

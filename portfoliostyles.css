@@ -2,9 +2,9 @@
   margin-bottom: 32px;
   .portfolio-container {
     margin: auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
+  }
+  .portfolio-item {
+    margin: 1rem 0;
   }
   #portfolio-section {
     max-width: 90%;
@@ -28,18 +28,50 @@
 }
 
 #modal1:target,
-#modal2:target #modal3:target #modal4:target #modal5:target #modal6:target {
+#modal2:target,
+#modal3:target,
+#modal4:target,
+#modal5:target,
+#modal6:target {
   display: flex;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .portfolio-page {
+    #portfolio-section {
+      max-width: 75%;
+      margin: 0 auto;
+    }
     .portfolio-container {
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      gap: 2rem;
+      max-width: 80%;
     }
     .portfolio-item {
       padding: 16px 32px 32px 32px;
+      height: fit-content;
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-page {
+    #portfolio-section {
+      max-width: 90%;
+      margin: 0 auto;
+    }
+    .portfolio-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      gap: 2rem;
+      max-width: 80%;
+    }
+    .portfolio-item {
+      padding: 16px 32px 32px 32px;
+      height: fit-content;
+      margin: 0;
     }
   }
 }
