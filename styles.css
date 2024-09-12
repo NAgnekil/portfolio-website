@@ -6,8 +6,6 @@
   --color-tiffany-blue: #94d1be;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
-
 @font-face {
   font-family: Poppins;
   src: url(assets/Poppins/Poppins-Regular.ttf) format('truetype');
@@ -198,7 +196,8 @@ main {
   }
 }
 
-#modal1:target {
+#modal1:target,
+#modal2:target {
   display: flex;
 }
 
@@ -248,7 +247,7 @@ main {
     .article-container {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: 40px 1fr;
+      grid-template-rows: 1fr;
       gap: 1rem;
       margin: 0 16px 32px 16px;
       .article-images {
@@ -257,11 +256,8 @@ main {
           margin-bottom: 0.6rem;
         }
       }
-      .article-desc {
-        width: 100%;
-        .project-goal {
-          margin-top: 0;
-        }
+      .project-goal {
+        margin-top: 0;
       }
     }
   }
@@ -326,6 +322,7 @@ footer {
       .nav-menu {
         flex-direction: row;
         padding: 0;
+        margin: 1rem;
         .nav-link {
           display: block;
         }

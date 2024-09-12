@@ -27,6 +27,11 @@
   }
 }
 
+#modal1:target,
+#modal2:target #modal3:target #modal4:target #modal5:target #modal6:target {
+  display: flex;
+}
+
 @media screen and (min-width: 768px) {
   .portfolio-page {
     .portfolio-container {
