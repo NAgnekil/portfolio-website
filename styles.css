@@ -12,6 +12,8 @@
   --max-width-medium: 95%;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+
 @font-face {
   font-family: Poppins;
   src: url(assets/Poppins/Poppins-Regular.ttf) format('truetype');
@@ -84,7 +86,7 @@ header {
       display: none;
     }
     .nav-menu {
-      gap: 2rem;
+      gap: 3rem;
       margin: 1rem 1rem 0.7rem 1rem;
       padding: 0;
       :first-child {
@@ -92,10 +94,17 @@ header {
       }
       .nav-link {
         display: none;
+        width: 100%;
+        text-align: center;
         a {
           text-decoration: none;
           color: inherit;
           font-size: 1.4rem;
+          width: 100%;
+          display: inline-block;
+        }
+        &:last-child {
+          margin-bottom: 16px;
         }
       }
       li {
@@ -332,7 +341,11 @@ footer {
         padding: 0;
         margin: 1rem auto;
         .nav-link {
+          width: unset;
           display: block;
+          &:last-child {
+            margin-bottom: unset;
+          }
         }
         :first-child {
           margin-top: 3px;
