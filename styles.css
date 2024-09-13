@@ -1,9 +1,11 @@
 :root {
-  --color-black-olive: #3b413c;
+  --color-caput-mortuum: #632321;
   --color-white: #fff;
-  --color-ash-gray: #9db5b2;
-  --color-light-cyan: #daf0ee;
-  --color-tiffany-blue: #94d1be;
+  --color-platinum: #e0e1dc;
+  --color-silver: #c3cfd4;
+  --color-pale-dogwood: #ccb5a8;
+  --color-air-force-blue: #7290aa;
+  --opacity-background-white: rgba(255, 255, 255, 0.7);
   --logo-width-large: 200px;
   --logo-width-small: 150px;
   --max-width-large: 75%;
@@ -34,9 +36,9 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0;
-  background-image: url(assets/pexels-diva-27294878.jpg);
-  /* background-color: rgba(255, 255, 255, 0.7);
-  background-blend-mode: lighten; */
+  color: var(--color-caput-mortuum);
+  background-image: url(assets/pexels-diva-27294878.webp);
+  background-color: var(--color-platinum);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -52,10 +54,11 @@ body {
 header {
   position: sticky;
   top: 0;
-  background: #fff;
+  background: var(--color-white);
   margin: 0 0 32px 0;
+  z-index: 3;
   nav {
-    border-bottom: 2px solid var(--color-black-olive);
+    border-bottom: 2px solid var(--color-caput-mortuum);
     ul {
       font-weight: 700;
     }
@@ -103,14 +106,14 @@ header {
 }
 
 main {
-  margin-bottom: 32px;
   .start-container,
   .portfolio-container {
     gap: 1rem;
+    margin-bottom: 32px;
     .welcome-text {
       max-width: 90%;
       padding: 0 32px 32px 32px;
-      background: rgba(255, 255, 255, 0.7);
+      background: var(--opacity-background-white);
       border-radius: 10px;
     }
   }
@@ -122,11 +125,13 @@ main {
         flex-direction: column;
         align-items: center;
         .portfolio-item {
-          font-size: 0.9rem;
           max-width: 90%;
           padding: 0 32px 32px 32px;
-          background: rgba(255, 255, 255, 0.7);
+          background: var(--opacity-background-white);
           border-radius: 10px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
           img {
             max-width: 100%;
           }
@@ -139,15 +144,15 @@ main {
         width: 90%;
         a {
           text-decoration: none;
-          color: var(--color-black-olive);
+          color: var(--color-caput-mortuum);
           margin: 0;
         }
       }
     }
   }
   aside {
-    /* background: rgba(255, 255, 255, 0.7); */
-    /* border-left: 4px solid var(--color-tiffany-blue); */
+    background: var(--opacity-background-white);
+    border-left: 6px solid var(--color-air-force-blue);
     max-width: 90%;
     height: 100%;
     border-radius: 10px;
@@ -156,9 +161,6 @@ main {
     blockquote {
       position: relative;
       line-height: 1.6;
-      .quote {
-        font-size: 1rem;
-      }
       .quote-author {
         font-size: 0.8rem;
         text-align: right;
@@ -169,7 +171,7 @@ main {
       content: '\201C';
       font-family: 'Alex Brush', regular;
       font-size: 8rem;
-      color: var(--color-tiffany-blue);
+      color: var(--color-air-force-blue);
       position: absolute;
       top: -3rem;
       left: -1.5rem;
@@ -179,10 +181,9 @@ main {
   .cta-button {
     display: inline-block;
     padding: 0.8rem 1.8rem;
-    background-color: var(--color-tiffany-blue);
-    color: var(--color-black-olive);
+    background-color: var(--color-pale-dogwood);
+    color: var(--color-caput-mortuum);
     font-weight: 700;
-    font-size: 1rem;
     border-radius: 10px;
     cursor: pointer;
     text-align: center;
@@ -192,13 +193,8 @@ main {
   }
 
   .cta-button:hover {
-    background-color: var(--color-light-cyan);
+    background-color: var(--color-platinum);
     transform: scale(1.05);
-  }
-
-  .cta-button:active {
-    background-color: var(--color-ash-gray);
-    transform: scale(1);
   }
 }
 
@@ -217,13 +213,13 @@ main {
   display: none;
   justify-content: center;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: var(--opacity-background-white);
   width: 100vw;
   height: 100vh;
   position: fixed;
-  z-index: 2;
+  z-index: 4;
   article {
-    background-color: var(--color-ash-gray);
+    background-color: var(--color-platinum);
     border-radius: 10px;
     width: 90%;
     height: 90%;
@@ -247,7 +243,7 @@ main {
         margin: 0 0 0 24px;
       }
       .close-modal {
-        color: var(--color-black-olive);
+        color: var(--color-caput-mortuum);
         cursor: pointer;
         margin-top: -2rem;
       }
@@ -257,7 +253,10 @@ main {
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr;
       gap: 1rem;
-      margin: 0 16px 32px 16px;
+      margin: 0 32px 32px 16px;
+      .article-desc {
+        margin-top: 48px;
+      }
       .article-images {
         img {
           max-width: 100%;
@@ -277,8 +276,8 @@ article::-webkit-scrollbar {
 }
 
 footer {
-  background: rgba(255, 255, 255, 0.7);
-  border-top: 2px solid var(--color-black-olive);
+  background: var(--opacity-background-white);
+  border-top: 2px solid var(--color-caput-mortuum);
   padding: 1.2rem;
   gap: 1.5rem;
   .logo-and-contact {
@@ -287,12 +286,12 @@ footer {
     }
     p {
       margin: 0;
-      font-size: 14px;
+      font-size: 0.9rem;
     }
   }
   .links {
     a {
-      color: var(--color-black-olive);
+      color: var(--color-caput-mortuum);
       font-weight: 600;
     }
   }
@@ -321,7 +320,7 @@ footer {
   }
 
   header {
-    background: rgba(255, 255, 255, 0.7);
+    background: var(--opacity-background-white);
     position: unset;
     nav {
       .nav-toggle {
@@ -350,8 +349,9 @@ footer {
     }
     .start-container,
     .portfolio-container {
-      margin: 0 auto;
+      margin: 0 auto 32px auto;
       .welcome-text {
+        font-size: 1.1rem;
         margin: 0;
       }
     }
@@ -363,38 +363,28 @@ footer {
       &.portfolio-container {
         .portfolio-teaser {
           flex-direction: row;
-          align-items: flex-start;
+          align-items: stretch;
           max-width: 90%;
           .portfolio-item {
             margin: 0;
-            background: rgba(255, 255, 255, 0.7);
+            background: var(--opacity-background-white);
           }
         }
       }
     }
     aside {
       margin: 0;
+      width: 90%;
       blockquote {
-        position: relative;
-        line-height: 1.6;
         .quote {
           margin-left: 1rem;
           margin-bottom: 0.4rem;
           font-size: 1.5rem;
         }
-        .quote-author {
-          text-align: right;
-        }
       }
       blockquote::after {
-        content: '\201C';
-        font-family: 'Alex Brush', regular;
         font-size: 10rem;
-        color: var(--color-tiffany-blue);
-        position: absolute;
         top: -4rem;
-        left: -1.5rem;
-        z-index: -1;
       }
     }
   }
