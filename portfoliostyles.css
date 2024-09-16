@@ -40,13 +40,13 @@
 @media screen and (min-width: 1200px) {
   .portfolio-page {
     #portfolio-section {
-      max-width: 75%;
+      max-width: 80%;
       margin: 0 auto;
     }
     .portfolio-container {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-      gap: 2rem;
+      gap: 1rem;
       max-width: 80%;
     }
     .portfolio-item {
@@ -68,7 +68,7 @@
     .portfolio-container {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-      gap: 2rem;
+      gap: 1rem;
       max-width: 80%;
     }
     .portfolio-item {
