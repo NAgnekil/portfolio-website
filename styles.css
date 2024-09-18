@@ -226,15 +226,15 @@ main {
   justify-content: center;
   align-items: center;
   background-color: var(--opacity-background-white);
-  width: 80vw;
-  height: 80vh;
+  width: 100vw;
+  height: 100vh;
   position: fixed;
   z-index: 4;
   article {
     background-color: var(--color-platinum);
     border-radius: 8px;
-    width: 72%;
-    height: 72%;
+    width: 90%;
+    height: 90%;
     overflow: auto;
     overflow-x: hidden;
     -ms-overflow-style: none;
